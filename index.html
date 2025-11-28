@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Chemistry - Air Alchemy</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="app">
+        <div id="webcam-container">
+            <video id="webcam" autoplay muted playsinline></video>
+            <canvas id="hand-canvas" class="overlay-canvas"></canvas>
+        </div>
+        
+        <div id="left-panel" class="panel">
+            <h3>Elements</h3>
+            <div class="element" data-element="C">
+                <span class="element-symbol">C</span>
+                <span class="element-name">Carbon</span>
+            </div>
+            <div class="element" data-element="H">
+                <span class="element-symbol">H</span>
+                <span class="element-name">Hydrogen</span>
+            </div>
+            <div class="element" data-element="O">
+                <span class="element-symbol">O</span>
+                <span class="element-name">Oxygen</span>
+            </div>
+        </div>
+        
+        <div id="center-area" class="interaction-zone">
+            <div id="molecule-container"></div>
+        </div>
+        
+        <div id="right-panel" class="panel">
+            <h3>Discovered</h3>
+            <div id="discovered-list"></div>
+        </div>
+        
+        <div id="finger-cursor" class="finger-cursor"></div>
+        <div id="status" class="status">Initializing...</div>
+
+        <button id="clear-button">Clear</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1620248259/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3.1620248259/drawing_utils.js"></script>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

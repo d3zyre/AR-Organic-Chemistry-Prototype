@@ -1,0 +1,38 @@
+{
+  "name": "ar-chemistry-prototype",
+  "version": "1.0.0",
+  "description": "A modular, efficient, and interactive web prototype of an Augmented Reality application for learning organic chemistry through gesture-based interactions.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -c-1",
+    "dev": "npx http-server -p 8000 -c-1 -o",
+    "build": "echo 'No build step required - pure HTML/CSS/JS application'",
+    "test": "echo 'No tests configured yet'"
+  },
+  "keywords": [
+    "augmented-reality",
+    "chemistry",
+    "education",
+    "hand-tracking",
+    "mediapipe",
+    "webcam",
+    "gesture-recognition",
+    "molecular-visualization"
+  ],
+  "author": "AR Chemistry Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ar-chemistry-prototype.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ar-chemistry-prototype/issues"
+  },
+  "homepage": "https://github.com/yourusername/ar-chemistry-prototype#readme"
+}
